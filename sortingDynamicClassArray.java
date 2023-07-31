@@ -7,7 +7,7 @@ class Student implements Comparable<Student>{
     int rollno;
     @Override
     public int compareTo(Student s){
-        return Integer.compare(s.rollno,this.rollno); // change order & dynamic size array
+        return Integer.compare(this.rollno,s.rollno); 
         
     }
     @Override
@@ -30,7 +30,7 @@ public class Main
 		    sc.nextLine();
 		}
 	//	System.out.println(arr.get(0).compareTo(arr.get(1)));
-		Collections.sort(arr,Collections.reverseOrder());
+		Collections.sort(arr);
 		System.out.println(arr);
 	}
 }

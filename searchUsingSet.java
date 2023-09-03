@@ -18,18 +18,18 @@ public class Main
 		}
 		
 		Set<Integer> set = new HashSet<>();
-        for(int i : arr){
-            set.add(i);
-        }
-        System.out.println("Enter number to check ");
-        int k = sc.nextInt();
-        int ans=0;
-        for(int i=0; i<set.size(); i++){
-            if(set.contains(k))
-                ans=1;
-            else
-                ans=0;
-        }
+        	for(int i : arr){
+            		set.add(i);
+       		 }
+        	System.out.println("Enter number to check ");
+        	int k = sc.nextInt();
+        	int ans=0;
+        	for(int i=0; i<set.size(); i++){
+           		if(set.contains(k))
+                		ans=1;
+            		else
+                		ans=0;
+        	}
 		System.out.println("Result : "+ans);
 	}
 }

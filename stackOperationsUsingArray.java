@@ -35,11 +35,10 @@ public class Main {
                     }
                     System.out.println();
                     break; 
+                case 4:
+                    System.out.println("Program terminated!!");
+                    return;
             } 
-            if(choice==4){
-                System.out.println("Program terminated!!");
-                return;
-            }
         } 
     } 
 }

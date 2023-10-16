@@ -5,7 +5,7 @@ public class Evaluation{
         Stack<Integer> stack=new Stack<>();
         for(char c: exp.toCharArray()){
             if(Character.isDigit(c))
-                Stack.push(c-'0');
+                stack.push(c-'0');
             else{
                 int op2=stack.pop();
                 int op1=stack.pop();
@@ -17,7 +17,7 @@ public class Evaluation{
     }
 
 public static int applyOp(int op1,int op2,char c){
-    switch(op){
+    switch(c){
         case '+':
             return op1+op2;
         case '-':
@@ -29,7 +29,7 @@ public static int applyOp(int op1,int op2,char c){
                 throw new ArithmeticException("Division by zero");
             return op1/op2;
         default:
-            throw new IllegalArgumentException("Invalid operator: "+op);
+            throw new IllegalArgumentException("Invalid operator: "+c);
     }
 }
 	public static void main(String[] args) {
@@ -40,4 +40,3 @@ public static int applyOp(int op1,int op2,char c){
 		System.out.println("Result="+res);
 	}
 }
-

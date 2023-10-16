@@ -101,7 +101,7 @@ public class SinglyLinkedList{
     }
     public static void displayList(){
         if(isEmpty()){ 
-            System.out.println("List is empty, deletion not possible.");
+            System.out.println("List is empty");
             return;
         }
         else{

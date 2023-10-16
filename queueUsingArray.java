@@ -72,6 +72,7 @@ class Queue {
 		            Q.display();
 		            break;
 		    	case 4:
+		    	    System.out.println("Program terminated!!");
 		    	    return;
 		    	default:
 		    	    System.out.println("Enter valid choice:");

@@ -17,7 +17,7 @@ class Queue {
 	      return true;
 	    return false;
 	}
-	static void enqueue(int data){
+	 void enqueue(int data){
 		if (isFull()) {
 			System.out.printf("\nCapacity exhausted, could not insert "+data+"\n");
 		}
@@ -27,9 +27,8 @@ class Queue {
 		    rear++;
 			queue[rear] = data;
 		}
-		return;
 	}
-	static void dequeue(){
+	 void dequeue(){
 		int element;
 	    if (isEmpty())
 	      System.out.println("Queue is empty");
@@ -39,13 +38,12 @@ class Queue {
 	    }
 	}
 	void display() {
-	    int i;
 	    if (isEmpty()) 
-	      System.out.println("Empty Queue");
+	      System.out.println("Queue is Empty");
 	    else {
 	        System.out.println("\nFront index-> " + front);
-	        System.out.println("Queue -> ");
-	        for (i = front; i <= rear; i++)
+	        System.out.print("Queue -> ");
+	        for (int i = front; i <= rear; i++)
 	            System.out.print(queue[i] + "  ");
             System.out.println("\nRear index-> " + rear);
 	    }

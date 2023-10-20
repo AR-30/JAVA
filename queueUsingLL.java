@@ -43,10 +43,24 @@ public class Main
             System.out.println();
         }
     }
+    static void size(){
+        if(front==null){
+            System.out.println("Queue is empty, size = 0");
+        }
+        else{
+            Node temp=front;
+            int count=0;
+            while(temp!=null){
+                count++;
+                temp=temp.next;
+            }
+            System.out.println("Size= "+count);
+        }
+    }
 	public static void main(String[] args) {
 	    Scanner sc =new Scanner(System.in);
 		while(true){
-		    System.out.println("Choose operation:\n1:enqueue()\n2:dequeue()\n3:display\n4:exit");
+		    System.out.println("Choose operation:\n1:enqueue()\n2:dequeue()\n3:size\n4:display\n5:exit");
 		    int c=sc.nextInt();
 		    switch(c){
 		        case 1:
@@ -58,9 +72,12 @@ public class Main
                     dequeue();
                     break;
                 case 3:
-                    display();
+                    size();
                     break;
                 case 4:
+                    display();
+                    break;
+                case 5:
                     System.out.println("Program terminated!!");
                     return;
                 default:

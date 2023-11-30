@@ -2,13 +2,13 @@
 
 public class BST{
     class Node{
-    int key;
-    Node left,right;
-    Node(int item){
-        key=item;
-        left=right=null;
+        int key;
+        Node left,right;
+        Node(int item){
+            key=item;
+            left=right=null;
+        }
     }
-}
     Node root;
     BST(){
         root=null;

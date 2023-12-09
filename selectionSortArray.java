@@ -26,7 +26,7 @@ public class Main
 		}
 		sort(arr);
 		System.out.print("Sorted array: ");
-		for(int i=0; i<n; i++)
+		for(int i=0; i<size; i++)
 		    System.out.print(arr[i]+" ");
 	}
 }

@@ -14,8 +14,6 @@ public class Main
 		    arr[i]=arr[min];
 		    arr[min]=temp;
 		}
-		for(int i=0; i<n; i++)
-		    System.out.print(arr[i]+" ");
     }
 	public static void main(String[] args) {
 	    Scanner sc = new Scanner(System.in);
@@ -27,5 +25,8 @@ public class Main
 		    arr[i]=sc.nextInt();
 		}
 		sort(arr);
+		System.out.print("Sorted array: ");
+		for(int i=0; i<n; i++)
+		    System.out.print(arr[i]+" ");
 	}
 }

@@ -1,3 +1,5 @@
+//KADANE'S ALGORITHM
+
 // Given an array of n integers (positive, negative, or zero), find the contiguous subarray (containing at least one number) which has the largest sum, and return that sum.
 
 //eg - For array [1, 2, -5, 4, 3], the subarrays [1, 2], [-5, 4], and [4, 3] are contiguous. 

@@ -10,7 +10,7 @@ import java.util.*;
 public class Main {
     public static int[][] merge(int[][] intervals) {
         //Sort intervals by start time
-        Arrays.sort(intervals, Comparator.comparingInt(a -> a[0]));
+        Arrays.sort(intervals, (a,b) -> Integer.compare(a[0],b[0]));
 
         int n = intervals.length;
         int[][] merged = new int[n][2];

@@ -1,4 +1,4 @@
-//Reverse a String
+//REVERSING A STRING
 
 import java.util.*;
 

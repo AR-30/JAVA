@@ -4,7 +4,7 @@ You want to maximize your profit by choosing a single day to buy one stock and c
 Return the maximum profit you can achieve from this transaction. If you cannot achieve any profit, return 0.
 */
 
-public class Main
+public class Main 
 {
 	public static void main(String[] args) {
 	    int[] prices={7, 10, 1, 3, 6, 9, 2};

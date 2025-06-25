@@ -1,6 +1,8 @@
 //Find factorial of a large number
 
 /*Method 1 - using BigInteger class
+Time Complexity: O(N)
+Auxiliary Space: O(1) 
 =======================================
         Java BigInteger – Notes
 =======================================
@@ -70,6 +72,43 @@ class Main {
 }
 
 
+//--------------------------------------------------------------------------------------------------------------
 
+/*Method 2 - using ARRAY to store the result
+Time Complexity: O(N log (N!)), where O(N) is for loop and O(log N!) is for nested while loop
+Auxiliary Space: O(max(digits in factorial))
+*/
 
-//Method 2 -
+class Main {
+    
+    public static int multiply(int i, int[] res, int res_size){
+        int carry = 0;
+        for(int j=0; j<res_size; j++){
+            int product = i*res[j] + carry;
+            res[i] = product % 10;
+            carry = product / 10;
+        }
+        while(carry != 0){
+            res[res_size] = carry%10;
+            carry = carry/10;
+            res_size++;
+        }
+        return res_size;
+    }
+    
+    public static void main(String[] args) {
+        int n = 100;
+        int[] res = new int[500];
+        
+        res[0] = 1;
+        int res_size = 1;
+        
+        for(int i=2; i<=n; i++){
+            res_size = multiply(i, res, res_size);
+        }
+        
+         System.out.println("Factorial :");
+        for (int i = res_size - 1; i >= 0; i--)
+            System.out.print(res[i]);
+    }
+}

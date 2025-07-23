@@ -15,7 +15,7 @@ public class Main {
         int left = 0, right = n - 1;
         int num = 1;
 
-        while (top <= bottom && left <= right) {
+        while (num<=n*n) {
             // Fill top row
             for (int i = left; i <= right; i++)
                 spiral[top][i] = num++;

@@ -10,7 +10,7 @@ public class Solution {
         LinkedList l = new LinkedList();
         int n = sc.nextInt();
         for(int i=0; i<n; i++){
-            String x = sc.next();
+            int x = sc.next();
             l.insertL(x);
         }
         l.reverse();

@@ -10,7 +10,7 @@ public class Solution {
         LinkedList l = new LinkedList();
         int n = sc.nextInt();
         for(int i=0; i<n; i++){
-            String x = sc.next();
+            int x = sc.next();
             l.insertL(x);
         }
         l.duplicate();
@@ -19,9 +19,9 @@ public class Solution {
 }
 
 class Node{
-    String data;
+    int data;
     Node next;
-    Node(String data){
+    Node(int data){
         this.data = data;
         next = null;
     }
@@ -29,7 +29,7 @@ class Node{
 class LinkedList{
     Node head = null;
     
-    void insertL(String data){
+    void insertL(int data){
         Node n = new Node(data);
         if(head == null){
             head = n;

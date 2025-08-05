@@ -10,7 +10,7 @@ public class Solution {
         LinkedList l = new LinkedList();
         int n = sc.nextInt();
         for(int i=0; i<n; i++){
-            int x = sc.next();
+            int x = sc.nextInt();
             l.insertL(x);
         }
         l.duplicate();
